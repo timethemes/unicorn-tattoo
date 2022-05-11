@@ -1,3 +1,58 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
+html, body {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Macondo";
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+
+body, h1, h2, h3, h4, h5, h6, ul, ol, li, p {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+.tt_site_header {
+  width: 100%;
+  padding: 2rem 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+.tt_site_header .navbar {
+  background-color: #FFFFFF;
+  padding: 10px 40px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+.tt_site_header .nav-link {
+  font-size: 1.5rem;
+  color: #000000;
+  font-weight: 700;
+}
+.tt_site_header .nav-link.active {
+  color: #01539d;
+}
+
+.tt_banner {
+  width: 100%;
+  height: 100vh;
+  min-height: 50px;
+  overflow: hidden;
+}
 
 /*# sourceMappingURL=tt_theme.css.map */

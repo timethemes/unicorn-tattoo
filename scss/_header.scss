@@ -1,0 +1,25 @@
+.tt_site_header{
+    width: 100%;
+    padding: 2rem 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+
+    .navbar{
+        background-color: $theme_white;
+        padding: 10px 40px;
+        box-shadow: 0 0 10px rgba($color: $theme_white, $alpha: 0.5);
+    }
+    .nav-link{
+        font-size: 1.5rem;
+        color: $theme_black;
+        font-weight: 700;
+
+        &.active{
+            color: $theme_color;
+        }
+    }
+}
