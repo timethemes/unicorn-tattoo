@@ -6,7 +6,7 @@
     left: 0;
     right: 0;
     width: 100%;
-    height: 100%;
+    z-index: 999;
 
     .navbar{
         background-color: $theme_white;
@@ -18,8 +18,8 @@
         color: $theme_black;
         font-weight: 700;
 
-        &.active{
-            color: $theme_color;
+        &:hover, &:focus, &.active{
+            color: $theme_base_color;
         }
     }
 }

@@ -3,6 +3,10 @@
     margin: 0;
     padding: 0;
 }
+*::selection{
+    background-color: transparent;
+    color: $theme_base_color;
+}
 html, body{
     scroll-behavior: smooth;
 }
@@ -18,4 +22,8 @@ body, h1, h2, h3, h4, h5, h6, ul, ol, li, p{
 }
 img{
     max-width: 100%;
+}
+a, button, input, textarea, select{
+    text-decoration: none;
+    outline: 0;
 }

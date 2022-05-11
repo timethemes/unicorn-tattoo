@@ -4,3 +4,53 @@
     min-height: 50px;
     overflow: hidden;
 }
+.tt_banner_slider_item{
+    position: relative;
+
+    .cont{
+        display: table;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        width: 100%;
+        max-width: 280px;
+        height: auto;
+        text-align: center;
+        color: #FFFFFF;
+        padding: 30px;
+        backdrop-filter: blur(5px);
+
+        &:before, &:after{
+            content: '';
+            position: absolute;
+            width: 50%;
+            height: 50%;
+            border-style: solid;
+            border-color: #FFF;
+        }
+
+        &:before{
+            top: 0;
+            left: 0;
+            border-width: 2px 0 0 2px;
+        }
+
+        &:after{
+            bottom: 0;
+            right: 0;
+            border-width: 0 2px 2px 0;
+        }
+
+        h2{
+            font-size: 10rem;
+            text-transform: uppercase;
+            font-weight: 900;
+        }
+        p{
+            font-size: 2rem;
+        }
+    }
+}
