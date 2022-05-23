@@ -44,17 +44,52 @@ a, button, input, textarea, select {
   width: 100%;
   z-index: 999;
 }
+.tt_site_header:before {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, #000000, transparent);
+}
+.tt_site_header .navbar-brand img {
+  filter: invert(1);
+}
+.tt_site_header .navbar-expand-lg .navbar-collapse {
+  flex: 0;
+}
 .tt_site_header .navbar {
-  background-color: #FFFFFF;
   padding: 10px 40px;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  justify-content: space-between;
+}
+.tt_site_header .nav-item {
+  padding: 0 30px;
 }
 .tt_site_header .nav-link {
-  font-size: 1.5rem;
-  color: #000000;
+  font-size: 2.5rem;
+  color: #FFFFFF;
   font-weight: 700;
+  padding: 0;
 }
 .tt_site_header .nav-link:hover, .tt_site_header .nav-link:focus, .tt_site_header .nav-link.active {
+  color: #eea47f;
+}
+
+.tt_site_header_social li {
+  display: block;
+  margin-right: 2.5rem;
+}
+.tt_site_header_social li:last-child {
+  margin-right: 0;
+}
+.tt_site_header_social a {
+  font-size: 2.5rem;
+  color: #FFFFFF;
+}
+.tt_site_header_social a:hover, .tt_site_header_social a:focus {
   color: #eea47f;
 }
 
@@ -63,12 +98,9 @@ a, button, input, textarea, select {
   height: 100vh;
   min-height: 50px;
   overflow: hidden;
-}
-
-.tt_banner_slider_item {
   position: relative;
 }
-.tt_banner_slider_item .cont {
+.tt_banner .cont {
   display: table;
   position: absolute;
   top: 0;
@@ -84,7 +116,7 @@ a, button, input, textarea, select {
   padding: 30px;
   backdrop-filter: blur(5px);
 }
-.tt_banner_slider_item .cont:before, .tt_banner_slider_item .cont:after {
+.tt_banner .cont:before, .tt_banner .cont:after {
   content: "";
   position: absolute;
   width: 50%;
@@ -92,22 +124,22 @@ a, button, input, textarea, select {
   border-style: solid;
   border-color: #FFF;
 }
-.tt_banner_slider_item .cont:before {
+.tt_banner .cont:before {
   top: 0;
   left: 0;
   border-width: 2px 0 0 2px;
 }
-.tt_banner_slider_item .cont:after {
+.tt_banner .cont:after {
   bottom: 0;
   right: 0;
   border-width: 0 2px 2px 0;
 }
-.tt_banner_slider_item .cont h2 {
+.tt_banner .cont h2 {
   font-size: 10rem;
   text-transform: uppercase;
   font-weight: 900;
 }
-.tt_banner_slider_item .cont p {
+.tt_banner .cont p {
   font-size: 2rem;
 }
 

@@ -27,8 +27,9 @@
 <body>
     <main class="tt_site_main">
         <header class="tt_site_header">
-            <div class="container">
+            <div class="container-fluid">
                 <nav class="navbar navbar-expand-lg">
+                    <a class="navbar-brand" href="index.html"><img src="images/unicorn.svg" alt="Unicorn Tattoo" /></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -46,10 +47,6 @@
                                 <a class="nav-link" href="#">Gallery</a>
                             </li>
                             <li class="nav-item">
-                                <a class="navbar-brand" href="index.html"><img src="images/unicorn.svg"
-                                        alt="Unicorn Tattoo" /></a>
-                            </li>
-                            <li class="nav-item">
                                 <a class="nav-link" href="#">Blog</a>
                             </li>
                             <li class="nav-item">
@@ -60,21 +57,31 @@
                             </li>
                         </ul>
                     </div>
+                    <div class="tt_site_header_social">
+                        <ul class="d-flex align-items-center">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
                 </nav>
             </div>
         </header>
         <div class="tt_page_content">
             <section class="tt_banner">
-                <div class="tt_banner_slider">
-                    <div class="tt_banner_slider_item">
-                        <div class="img">
-                            <img src="images/banner_slide01.jpg" />
-                        </div>
-                        <div class="cont">
-                            <h2>Unicorn</h2>
-                            <p>A symbol of <strong>Freedom</strong>, <strong>Magic</strong>, and <strong>Purity</strong></p>
-                        </div>
-                    </div>
+                <div class="img">
+                    <!-- <img src="images/banner_slide01.jpg" /> -->
+                    <video src="images/hero_video.mp4" autoplay controls="false" loop></video>
+                </div>
+                <div class="cont">
+                    <h2>Unicorn</h2>
+                    <p>A symbol of <strong>Freedom</strong>, <strong>Magic</strong>, and <strong>Purity</strong></p>
+                </div>
+            </section>
+            <section class="tt_about">
+                <div class="tt_about_wrapper">
+                    <div class="tt_about_img"></div>
+                    <div class="tt_about_content"></div>
                 </div>
             </section>
         </div>
